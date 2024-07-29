@@ -1,14 +1,14 @@
 {
-	"image": "mcr.microsoft.com/devcontainers/base:jammy",
-  "features": {
-    "ghcr.io/devcontainers-contrib/features/zig:1": {},
-    "ghcr.io/devcontainers-contrib/features/act:1": {}
-  },
-	"customizations": {
-		"vscode": {
-			"extensions": [
+    "build": {
+        // Path is relative to the devcontainer.json file.
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-azuretools.vscode-docker",
 				"ziglang.vscode-zig"
-			]
-		}
-	}
+            ]
+        }
+    }
 }
