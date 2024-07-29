@@ -1,0 +1,17 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/zig:1": {},
+    "ghcr.io/devcontainers-contrib/features/act:1": {},
+    "ghcr.io/devcontainers-contrib/features/apt-packages:1": {
+      "packages": "javascriptcoregtk-4.0"
+    }
+  },
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ziglang.vscode-zig"
+			]
+		}
+	}
+}
